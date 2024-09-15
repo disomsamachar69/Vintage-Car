@@ -1,0 +1,40 @@
+/* styles/PhotoModal.module.css */
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modalContent {
+    position: relative;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 80vw; /* Ensures modal is not too wide */
+    max-height: 80vh; /* Ensures modal is not too tall */
+    margin: 0 1rem;
+  }
+  
+  .modalContent img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Adjust to fit the viewport */
+  }
+  
+  @media (max-width: 768px) {
+    .modalContent img {
+      max-height: 70vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modalContent img {
+      max-height: 60vh;
+    }
+  }
+  

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* In globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+.vintage-font {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* styles/globals.css */
+
+@media (max-width: 768px) {
+    .photo-modal img {
+      max-height: 70vh; /* Adjust for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .photo-modal img {
+      max-height: 60vh; /* Adjust for phones and very small screens */
+    }
+  }
+  
